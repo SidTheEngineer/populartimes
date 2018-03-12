@@ -338,7 +338,8 @@ def get_current_popular_times(api_key, place_id):
         "name": detail["name"],
         "address": detail["formatted_address"],
         "types": detail["types"],
-        "coordinates": detail["geometry"]["location"]
+        "coordinates": detail["geometry"]["location"],
+        "photos": detail["photos"]
     }
 
     # check optional return parameters
